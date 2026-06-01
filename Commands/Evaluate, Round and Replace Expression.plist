@@ -5,7 +5,7 @@
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
 	<key>command</key>
-	<string>#!/usr/bin/env ruby20
+	<string>#!/usr/bin/env ruby
 
 expression = STDIN.read.gsub(/(-?\d+)e(-?\d+)/i, '(\1*10^\2)')
 result = open('|/usr/bin/bc -l', 'w+') do |io|
